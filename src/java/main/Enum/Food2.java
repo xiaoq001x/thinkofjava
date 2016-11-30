@@ -1,6 +1,4 @@
-package main.Enum.doc;
-
-import main.Enum.Food;
+package main.Enum;
 
 /**
  * Created by Bashark on 2016/11/29.
