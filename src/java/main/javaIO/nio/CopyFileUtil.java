@@ -199,8 +199,8 @@ public class CopyFileUtil {
 
     public static void main(String[] args) {
         String msg;
-        String srcDirName = "C:\\Users\\Bashark\\Desktop\\mmexport1481505958867.jpg";
-        String destDirName = "C:\\Users\\Bashark\\Desktop\\xx.jpg";
+        String srcDirName = "E:\\迅雷下载\\Ghost_XP_SP3.iso";
+        String destDirName = "C:\\Users\\Bashark\\Desktop\\Ghost_XP_SP3.iso";
         long startTime = System.currentTimeMillis();
         CopyFileUtil.copyFile(srcDirName, destDirName, true);
         long endTime = System.currentTimeMillis(); //获取结束时间
