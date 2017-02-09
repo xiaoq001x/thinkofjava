@@ -6,14 +6,8 @@ import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 
-interface IEntity {
-
-}
-
-class Entity implements IEntity {
-    private String s1;
-
-    private String s2;
+class IEntity {
+    public String s2;
 
     public String getS2() {
         return s2;
@@ -22,6 +16,11 @@ class Entity implements IEntity {
     public void setS2(String s2) {
         this.s2 = s2;
     }
+}
+
+class Entity extends IEntity {
+    public String s1;
+
 
     public String getS1() {
         return s1;
@@ -42,7 +41,7 @@ public class Test {
 
     public static void reflect(Object e) throws Exception {
         Class cls = e.getClass();
-        Method[] methods = cls.getDeclaredMethods();
+        Method[] methods = cls.getMethods();
         for (int i = 0; i < methods.length; i++) {
             Method f = cls.getDeclaredMethod("getS1");
             f.setAccessible(true);

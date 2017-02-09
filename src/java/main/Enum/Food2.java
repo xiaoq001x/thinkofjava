@@ -5,6 +5,6 @@ package main.Enum;
  */
 public interface Food2 extends Food {
     enum Appetizer implements Food {
-        SALAD, SOUP, SPING_ROLLS, WATER
+
     }
 }
